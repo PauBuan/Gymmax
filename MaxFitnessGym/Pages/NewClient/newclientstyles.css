@@ -1,0 +1,97 @@
+﻿/* newclientstyles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Change to preferred font */
+}
+
+#container {
+    max-width: 800px;
+    width: 90%; /* Adjusted width */
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center; /* Center align heading */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.btn {
+    background-color: lightblue;
+    color: initial;
+    text-decoration: none;
+    padding: 15px 20px; /* Adjusted button padding */
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 40px; /* Add some spacing between buttons */
+}
+
+    .btn:last-child {
+        margin-right: 0; /* Remove right margin for the last button */
+    }
+
+    .btn:hover {
+        background-color: cadetblue;
+    }
+
+.form-group {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+    .form-group label {
+        width: 30%;
+        margin-right: 20px;
+        text-align: right;
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        flex: 1;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Improved input border */
+    }
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .form-group label {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+#label {
+    text-align: center; /* Center align the message */
+    margin-top: 10px; /* Add some space above the message */
+}
+
+    #label #MainContent_lblMessage {
+        display: block;
+        font-size: 16px; /* Adjust font size */
+        color: #d63031; /* Red color for error messages */
+        font-weight: bold; /* Make message bold */
+    }

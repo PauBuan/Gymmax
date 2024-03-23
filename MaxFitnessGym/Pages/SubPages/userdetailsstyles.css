@@ -1,0 +1,97 @@
+﻿/* userdetailsstyles.css */
+
+/* Apply styles to the entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Change to preferred font */
+    background-color: #f7f7f7; /* Set background color */
+}
+
+/* Container for user details */
+#container {
+    max-width: 600px;
+    width: 90%; /* Adjusted width */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 50px auto; /* Center the container vertically and horizontally */
+}
+
+/* Heading style */
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Style for user information */
+.user-info {
+    margin-bottom: 30px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .info-row label {
+        flex: 0 0 30%; /* Set label width */
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+        .info-row label::after {
+            content: ":";
+        }
+
+    /* Style for labels */
+    .info-row .label {
+        font-weight: bold;
+    }
+
+    /* Style for user details */
+    .info-row .detail {
+        flex: 1; /* Take remaining space */
+        font-size: 18px;
+    }
+
+/* Button container */
+.btn-container {
+    text-align: center;
+}
+
+/* Style for buttons */
+.btn {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 15px 20px; /* Adjusted button padding */
+    font-size: 20px;
+    border-radius: 5px;
+    border: none; /* Remove button border */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+    /* Hover effect */
+    .btn:hover {
+        background-color: #0056b3; /* Darker blue color on hover */
+    }
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .info-row label {
+        flex: 0 0 40%; /* Adjust label width for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .info-row label {
+        flex: 0 0 50%; /* Adjust label width for even smaller screens */
+    }
+}

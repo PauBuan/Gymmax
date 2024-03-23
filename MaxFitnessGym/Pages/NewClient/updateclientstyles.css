@@ -1,0 +1,95 @@
+﻿/* updateclientstyles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Change to preferred font */
+}
+
+#container {
+    max-width: 800px;
+    width: 90%; /* Adjusted width */
+    border: 2px solid #ccc; /* Improved border color */
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 50px auto; /* Centering the container */
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center; /* Center align heading */
+}
+
+.btn-container {
+    text-align: center; /* Center align buttons */
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #3498db; /* Improved button color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+    .btn:hover {
+        background-color: #2980b9; /* Darker color on hover */
+    }
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Improved input border */
+    }
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .form-group label {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+#label1 {
+    text-align: center; /* Center align the message */
+    margin-top: 10px; /* Add some space above the message */
+}
+
+    #label1 #MainContent_lblIDError {
+        display: block;
+        font-size: 16px; /* Adjust font size */
+        color: #d63031; /* Red color for error messages */
+        font-weight: bold; /* Make message bold */
+    }
+
+#label2 {
+    text-align: center; /* Center align the message */
+    margin-top: 10px; /* Add some space above the message */
+}
+
+#label2 #MainContent_lblUpdateError {
+    display: block;
+    font-size: 16px; /* Adjust font size */
+    color: #d63031; /* Red color for error messages */
+    font-weight: bold; /* Make message bold */
+}

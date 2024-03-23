@@ -1,0 +1,182 @@
+﻿/* pagestyles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    flex-grow: 1; /* Take remaining space */
+    margin-right: 10px; /* Add some spacing */
+}
+
+#MainContent_btnNewClient,
+#MainContent_btnUpdate,
+#MainContent_btnDelete {
+    background-color: lightblue;
+    color: initial;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+    #MainContent_btnNewClient:hover,
+    #MainContent_btnUpdate:hover,
+    #MainContent_btnDelete:hover {
+        background-color: cadetblue;
+    }
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+    .table th,
+    .table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .table thead th {
+        font-size: 20px;
+    }
+
+    .table tbody th {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+/* Styles for the home container */
+.home-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between children */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Set position relative for absolute positioning */
+    background-color: black; /* Background color */
+}
+
+/* Styles for the left section */
+.left-section {
+    flex: 1; /* Take up 33.33% of the container width */
+    overflow: hidden; /* Hide overflow content */
+    margin-right: 10px; /* Reduce right margin */
+    display: flex;
+    justify-content: center;
+}
+
+    /* Styles for the feat image */
+    .left-section img {
+        max-width: 100%; /* Ensure the image takes up full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+/* Styles for the middle section */
+.middle-section {
+    flex: 1; /* Take up 33.33% of the container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Styles for the gym logo */
+    .middle-section img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+/* Styles for the right section */
+.right-section {
+    flex: 1; /* Take up 33.33% of the container width */
+    display: flex;
+    flex-direction: column; /* Align images in a column */
+    align-items: center;
+    padding-left: 10px; /* Add padding to the left */
+}
+    .right-section img {
+        width: 100%; /* Set the image width to 100% of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+/* Styles for the image containers */
+.image-container {
+    margin: 10px 0; /* Add vertical spacing between images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 5px; /* Add some rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+    .image-container img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        transition: transform 0.3s ease; /* Add a smooth transition on hover */
+    }
+
+    /* Hover effect for the images */
+    .image-container:hover img {
+        transform: scale(1.05); /* Scale up the image slightly on hover */
+    }
+
+/* Hide overflow in the body */
+body {
+    overflow: hidden;
+}
+
+
+/* Styles for the image containers */
+.image-container {
+    margin: 10px 0; /* Add vertical spacing between images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 5px; /* Add some rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+    .image-container img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        transition: transform 0.3s ease; /* Add a smooth transition on hover */
+    }
+
+    /* Hover effect for the images */
+    .image-container:hover img {
+        transform: scale(1.05); /* Scale up the image slightly on hover */
+    }
+
+body {
+    overflow: hidden;
+}

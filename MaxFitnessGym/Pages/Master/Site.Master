@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MaxFitnessGym.Site" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Fitness Gym</title>
+    <link rel="stylesheet" href="stylesmaster.css" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="box-shadow">
+                <h1 class="navbar-brand">Max Fitness Gym</h1>
+                <nav>
+                    <ul class="nav-pills border-bottom">
+                        <% if (!Request.Url.AbsolutePath.Contains("/Pages/SubPages/UserDetails.aspx")) { %>
+                            <li><a href="/Pages/SubPages/tryHomePage.aspx" runat="server" class="nav-link">Home</a></li>
+                            <li><a href="/Pages/SubPages/Customer.aspx" runat="server" class="nav-link">Customer</a></li>
+                            <li><a href="/Pages/SubPages/Subscription.aspx" runat="server" class="nav-link">Subscription</a></li>
+                            <li><a href="/Pages/SubPages/Transaction.aspx" runat="server" class="nav-link">Transaction</a></li>
+                            <li><a href="/Pages/LogIn/logIn.aspx" runat="server" class="nav-link">Log Out</a></li>
+                        <% } else { %>
+                            <li><a runat="server" class="nav-link disabled">Home</a></li>
+                            <li><a runat="server" class="nav-link disabled">Customer</a></li>
+                            <li><a runat="server" class="nav-link disabled">Subscription</a></li>
+                            <li><a runat="server" class="nav-link disabled">Transaction</a></li>
+                            <li><a runat="server" class="nav-link disabled">Log Out</a></li>
+                        <% } %>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <footer class="footer border-top">
+        &copy; 2024 - MaxFitnessGym
+    </footer>
+</body>
+</html>
